@@ -225,7 +225,7 @@ html, body {
         width: 120px;
         height: 120px;
         background-color: white;
-        border-radius: 70px;
+        border-radius: 40px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         margin: 20px 3px;
     }
@@ -424,6 +424,7 @@ html, body {
     .top-buttons div {
         text-align: center;
         border: 2px solid #fff;
+        border-radius: 100px;
         display: inline-block;
         font-size: 12px;
         padding: 10px 17px;
@@ -720,8 +721,8 @@ html, body {
 .flat-clipart {
     background-color: white;
     background-size: cover;
-    border-top: 1px solid #508991;
-    border-bottom: 1px solid #508991;
+    border-top: 1px dashed #508991;
+    border-bottom: 1px dashed #508991;
     height: 800px;
     width: 100%;
     position: relative;
@@ -733,13 +734,14 @@ html, body {
     left: 0;
     right: 0;
     margin: 0 auto;
+    font-size: 15px;
     line-height: 30px;
     width: 400px;
-    border: 1px solid black;
     text-align: center;
-    background-color: rgba(80, 137, 145, 0.9);
+    background-color: rgba(80, 137, 145, 0.7);
     padding: 10px;
     color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: .3s;
     
 }
@@ -870,6 +872,10 @@ html, body {
     color: #5FAD41;
 }
 
+.prices {
+    border-bottom: 1px dashed #508991;
+    margin-bottom: 50px;
+}
 
 .prices .uslugi {
     margin-top: 75px;
@@ -944,7 +950,8 @@ html, body {
     .prices .price .podrobnee-btn, .our-contacts .podrobnee-btn, .hover-form .podrobnee-btn, .review-btn, .submit-review-btn {
         font-size: 24px;
         border: 2px solid #BFAE48;
-        padding: 20px 10px;
+        border-radius: 100px;
+        padding: 15px 10px;
         margin-top: 30px;
         transition: .3s;
         cursor: pointer;
@@ -961,7 +968,7 @@ html, body {
     }
 
 .our-deals {
-    border-bottom: 1px solid #508991;
+    border-bottom: 1px dashed #508991;
     margin-bottom: 50px;
 }
 
@@ -1041,6 +1048,7 @@ html, body {
                 text-align: center;
                 font-size: 10px;
                 border: 2px solid #fff;
+                border-radius: 100px;
                 background-color: #BFAE48;
                 background-color: rgba(139, 195, 74, .4);
                 transition: .3s;
@@ -1115,18 +1123,29 @@ button.accordion {
 button.accordion:after{
 	content: "";
 	float: right;
-	margin-top: 6px;
-	border-top: 5px solid transparent;
-	border-left: 10px solid black;
-	border-bottom: 5px solid transparent;
+    height: 25px;
+    width: 25px;
+    background-image: url('../img/down.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
 }
 button.accordion.active:after{
 	content: "";
 	float: right;
-	margin-top: -1px;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid black;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
+    transition: .3s;
 }
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
@@ -1210,6 +1229,7 @@ table.fixed td:nth-of-type(3) {
     background-color: #FDE9DA;
 }
 
+
 .our-contacts .contacts {
     margin-top: 90px;
 }
@@ -1286,7 +1306,7 @@ table.fixed td:nth-of-type(3) {
 
         .our-contacts .contact-form .form-group label.message {
             opacity: 0;
-            color: #BFAE48;
+            color: #E0262F;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
@@ -1294,7 +1314,7 @@ table.fixed td:nth-of-type(3) {
 
 .hover-form .form-group label.message, .hover-form-review .form-group label.message {
     opacity: 0;
-    color: #BFAE48;
+    color: #931621;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -1601,6 +1621,9 @@ table.fixed td:nth-of-type(3) {
         }
 
         .about-us .icons::before {
+            width: 50px;
+            height: 50px;
+            background-color: red;
             display: none;
         }
 
