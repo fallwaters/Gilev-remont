@@ -332,8 +332,8 @@ html, body {
     top: 0;
     background: 
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
     ),
     url(../img/1.jpg);
 	background-size: cover;
@@ -386,7 +386,7 @@ html, body {
 
 .slogan-top-red {
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Cormorant Garamond', serif;
     position: absolute;
     top: 200px;
     z-index: 2;
@@ -445,12 +445,12 @@ html, body {
 
     .top-buttons .button-transp {
         background-color: #18191d;
-        background-color: rgba(24, 25, 29, .4);
+        background-color: rgba(24, 25, 29, 1);
     }
 
         .top-buttons .button-transp:hover {
             background-color: #18191d;
-            background-color: rgba(24, 25, 29, 1);
+            background-color: rgba(1, 1, 1, 1);
         }
 
         .top-buttons .button-transp a {
@@ -1644,7 +1644,7 @@ table.fixed td:nth-of-type(3) {
 
     .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
                     color: #FFE066;
-                    font-size: 12px;
+                    font-size: 13px;
                     text-decoration: none;
                 }
         .about-us .icons .second, .about-us .icons .third, .about-us .icons .fourth {
@@ -1737,13 +1737,14 @@ table.fixed td:nth-of-type(3) {
     
 
     .left-side-bar .menu ul a {
-        font-size: 11px;
+        font-size: 12px;
     }
     
     .left-side-bar .top-logo {
         width: 120px;
         height: 120px;
     }
+    
 
     .left-side-bar .left-side-contacts .phone {
         font-size: 12px;
@@ -1919,6 +1920,14 @@ table.fixed td:nth-of-type(3) {
 }
 
 @media (min-width: 992px) {
+    
+    
+    .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
+                    color: #FFE066;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+    
     .left-side-bar .top-logo {
         width: 150px;
         height: 150px;
@@ -1967,11 +1976,11 @@ table.fixed td:nth-of-type(3) {
     }
 
     .left-side-bar .menu ul a {
-        font-size: 11px;
+        font-size: 13px;
     }
     
     .left-side-bar .menu ul a:hover {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .flat-clipart {
@@ -2151,6 +2160,8 @@ table.fixed td:nth-of-type(3) {
 }
 
 @media (min-width: 1200px) {
+    
+    
     .left-side-bar .top-logo {
         width: 180px;
         height: 180px;
@@ -2167,12 +2178,17 @@ table.fixed td:nth-of-type(3) {
     }
     
     .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
-        font-size: 12px;
+        font-size: 15px;
     }
     
     .left-side-bar .menu ul li {
         padding: 10px 34px ;
+        font-size: 12px;
         width: 200px;
+    }
+    
+    .left-side-bar .menu ul a {
+        font-size: 14px;
     }
 
     .left-side-bar .left-side-contacts {
