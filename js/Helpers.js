@@ -190,15 +190,52 @@ var memes = true;
         $('.smoke').css('display', 'block');
         $('.hover-form-review').show('slow');
     });
-
+		//Звонок снизу
+         $("#contacts-form .submit-btn").click(function () {
+             if ($('#contacts-form #fio').val() != '' && $('#contacts-form #phone').val() != '') {
+                 var form_data = $('#contacts-form').serialize();
+                 $.ajax({
+                     type: "POST",
+                     url: "send.php",
+                     data: form_data,
+                     success: function () {
+                         //yaCounter38210115.reachGoal('REQUEST_SENDED');
+                         $('#contacts-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+                         $('#contacts-form').find("input[type=text], textarea").val("");
+                     },
+                 });
+             }
+             else {
+                 $("#contacts-form .message").text('Поля, отмеченные звездочкой (*) обязательны для заполнения').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+             }
+         });
+         //Звонок с карусели
+         $("#hover-form .submit-btn").click(function () {
+             if ($('#hover-form #fio1').val() != '' && $('#hover-form #phone1').val() != '') {
+                 var form_data = $('#hover-form').serialize();
+                 $.ajax({
+                     type: "POST",
+                     url: "send.php",
+                     data: form_data,
+                     success: function () {
+                         //yaCounter38210115.reachGoal('REQUEST_SENDED');
+                         $('#hover-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+                         $('#hover-form').find("input[type=text], textarea").val("");
+                     },
+                 });
+             }
+             else {
+                 $("#hover-form .message").text('Поля, отмеченные звездочкой (*) обязательны для заполнения').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+             }
+         });
     
-
+	//Отзыв
     $("#hover-form-review .submit-review-btn").click(function () {
         if ($('#hover-form-review #fio2').val() != '' && $('#hover-form-review #review').val() != '') {
             var form_data = $('#hover-form-review').serialize();
             $.ajax({
                 type: "POST",
-                url: "/sendReview.php",
+                url: "sendReview.php",
                 data: form_data,
                 success: function () {
                     $('#hover-form-review .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
@@ -207,7 +244,7 @@ var memes = true;
             });
         }
         else {
-            $("#hover-form-review .message").text('Поля Ф.И.О и Телефон должны быть заполнены').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+            $("#hover-form-review .message").text('Поля, отмеченные звездочкой (*) обязательны для заполнения').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
         }
     });
 });

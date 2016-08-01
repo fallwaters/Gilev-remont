@@ -42,7 +42,7 @@
          </div>
          <ul>
             <li><a href="#about">О нас</a></li>
-<!--            <li><a href="#scheme">Дизайн интерьера</a></li>-->
+            <li><a href="#scheme">Дизайн интерьера</a></li>
             <li><a href="#deals">Наши работы</a></li>
             <li><a href="#prices">Стоимость услуг</a></li>
             <li><a href="#contacts">Контакты</a></li>
@@ -59,7 +59,7 @@
          <div class="menu">
             <ul>
                <li><a href="#about">О нас</a></li>
-<!--               <li><a href="#scheme">Почему мы?</a></li>-->
+               <li><a href="#scheme">Почему мы?</a></li>
                <li><a href="#deals">Наши работы</a></li>
                <li><a href="#prices">Цены</a></li>
                <li><a href="#contacts">Контакты</a></li>
@@ -1621,13 +1621,13 @@
          <div class="form-group col-xs-12 col">
          <div class="col-xs-12 col-lg-6 col fio clearfix">
          <div class="col-xs-12 col clearfix">
-         <label>Ф. И. О.</label>
+         <label>Ф. И. О. *</label>
          </div>
          <input id="fio" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
          </div>
          <div class="col-xs-12 col-lg-6 col phone clearfix">
          <div class="col-xs-12 col clearfix">
-         <label>Телефон</label>
+         <label>Телефон *</label>
          </div>
          <input id="phone" name="phone" type="text" placeholder="* +7 (495) 900 90 90" />
          </div>
@@ -1678,13 +1678,13 @@
             <div class="form-group">
                <div class="fio clearfix">
                   <div class="clearfix">
-                     <label>Ф. И. О.</label>
+                     <label>Ф. И. О. *</label>
                   </div>
                   <input id="fio1" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
                </div>
                <div class="phone clearfix">
                   <div class="clearfix">
-                     <label>Телефон</label>
+                     <label>Телефон *</label>
                   </div>
                   <input id="phone1" name="phone" type="text" placeholder="* +7 900 900 90 90" />
                </div>
@@ -1715,21 +1715,9 @@
             <div class="form-group">
                <div class="fio clearfix">
                   <div class="clearfix">
-                     <label>Ф. И. О.</label>
+                     <label>Ф. И. О. *</label>
                   </div>
                   <input id="fio2" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
-               </div>
-               <div class="auto clearfix">
-                  <div class="clearfix">
-                     <label>Марка подобранного авто</label>
-                  </div>
-                  <input type="text" id="mark" name="mark" placeholder="Ford Focus 2" />
-               </div>
-               <div class="auto-price clearfix">
-                  <div class="clearfix">
-                     <label>Цена подобронного авто</label>
-                  </div>
-                  <input type="text" id="price" name="price" placeholder="360 000" />
                </div>
                <div class="clearfix">
                   <label>Отзыв</label>
@@ -1760,45 +1748,6 @@
              $('#datetimepicker1').datetimepicker({
                  locale: 'ru'
              });
-         });
-      </script>
-      <script type="text/javascript">
-         $("#contacts-form .submit-btn").click(function () {
-             if ($('#contacts-form #fio').val() != '' && $('#contacts-form #phone').val() != '') {
-                 var form_data = $('#contacts-form').serialize();
-                 $.ajax({
-                     type: "POST",
-                     url: "send.php",
-                     data: form_data,
-                     success: function () {
-                         //yaCounter38210115.reachGoal('REQUEST_SENDED');
-                         $('#contacts-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
-                         $('#contacts-form').find("input[type=text], textarea").val("");
-                     },
-                 });
-             }
-             else {
-                 $("#contacts-form .message").text('Поля Ф.И.О и Телефон должны быть заполнены').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
-             }
-         });
-         
-         $("#hover-form .submit-btn").click(function () {
-             if ($('#hover-form #fio1').val() != '' && $('#hover-form #phone1').val() != '') {
-                 var form_data = $('#hover-form').serialize();
-                 $.ajax({
-                     type: "POST",
-                     url: "send.php",
-                     data: form_data,
-                     success: function () {
-                         //yaCounter38210115.reachGoal('REQUEST_SENDED');
-                         $('#hover-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
-                         $('#hover-form').find("input[type=text], textarea").val("");
-                     },
-                 });
-             }
-             else {
-                 $("#hover-form .message").text('Поля Ф.И.О и Телефон должны быть заполнены').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
-             }
          });
       </script>
    </body>
