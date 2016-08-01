@@ -18,7 +18,6 @@ $(document).ready(function () {
     
     $('a.link').on('click', linkSwitch);
     
-    
     $('a[href$="#top"]').bind('click', function (e){
         e.preventDefault();
         $(document).off('scroll');
@@ -117,6 +116,7 @@ var memes = true;
             });
             }
         }
+        e.preventDefault();
     });
     
     $(document).on('scroll', onScroll);

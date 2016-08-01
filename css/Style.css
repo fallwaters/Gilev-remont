@@ -12,7 +12,7 @@ input, textarea {
 }
 
 html, body {
-    font-family: 'Open Sans', Helvetica Neue, sans-serif;
+    font-family: 'Roboto', Helvetica Neue, sans-serif;
     display: table;
     height: 100%;
     margin: 0 auto;
@@ -385,6 +385,7 @@ html, body {
 
 .slogan-top-red {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
     position: absolute;
     top: 200px;
     z-index: 2;
@@ -797,6 +798,7 @@ html, body {
 }
 
 
+
 .flat-img {
     position: absolute;
     top: 0;
@@ -961,7 +963,7 @@ html, body {
         font-size: 24px;
         border: 2px solid #DE6461;
         border-radius: 100px;
-        padding: 15px 10px;
+        padding: 12px 8px;
         margin-top: 30px;
         transition: .3s;
         cursor: pointer;
@@ -970,6 +972,13 @@ html, body {
 
 .our-contacts .podrobnee-btn, .hover-form .podrobnee-btn, .review-btn, .submit-review-btn {
     margin-top: 30px;
+     font-size: 24px;
+        border: 2px solid #DE6461;
+        border-radius: 100px;
+        padding: 15px 10px;
+        transition: .3s;
+        cursor: pointer;
+        background-color: #fff;
 }
 
     .prices .price .podrobnee-btn:hover, .our-contacts .podrobnee-btn:hover, .hover-form .podrobnee-btn:hover, .review-btn:hover, .submit-review-btn:hover {
@@ -1581,6 +1590,10 @@ table.fixed td:nth-of-type(3) {
 
 @media(min-width: 768px) {
 
+    .flat-content {
+        height: 450px;
+    }
+    
     .flat-category {
         margin-left: 20px;
     }
@@ -1709,8 +1722,9 @@ table.fixed td:nth-of-type(3) {
         }
 
     .left-side-bar .menu ul li {
-        padding: 10px 15px;
-        line-height: 14px;
+        padding: 10px 0px;
+        width: 128px;
+        height: 40px;
     }
     
 
@@ -1940,6 +1954,7 @@ table.fixed td:nth-of-type(3) {
 
     .left-side-bar .menu ul li {
         padding: 10px 17px 10px 16px;
+        width: 166px;
         height: 45px;
     }
 
@@ -1949,6 +1964,10 @@ table.fixed td:nth-of-type(3) {
     
     .left-side-bar .menu ul a:hover {
         font-size: 12px;
+    }
+    
+    .flat-content {
+        height: 550px;
     }
     
     .flat-category {
@@ -2136,11 +2155,12 @@ table.fixed td:nth-of-type(3) {
     }
     
     .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
-        font-size: 13px;
+        font-size: 12px;
     }
     
     .left-side-bar .menu ul li {
         padding: 10px 34px ;
+        width: 200px;
     }
 
     .left-side-bar .left-side-contacts {
@@ -2301,6 +2321,10 @@ table.fixed td:nth-of-type(3) {
                     font-size: 14px;
                 }
 
+    
+    .flat-content {
+        height: 650px;
+    }
     
     .flat-category {
         margin-left: 200px;
