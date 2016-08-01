@@ -1,18 +1,21 @@
 <?php
 	 $to = 'narek1110@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
      $subject = 'Заказ'; //Загаловок сообщения
-     $message = '
-                <html>
+     $fio = htmlspecialchars($_POST["fio"]);
+	 $phone = htmlspecialchars($_POST["phone"]);
+	 $date = htmlspecialchars($_POST["date"]);
+	 $additional = htmlspecialchars($_POST["additional"]);
+	 $message = '<html>
                     <head>
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p>Имя: '.$_POST['fio'].'</p>
-                        <p>Телефон: '.$_POST['phone'].'</p> 
-						<p>Дата и время звонка: '.$_POST['date']'</p>
-						<p>Дополнительная информация: '.$_POST['additional'].'</p> 
+                        <p>Имя: '.$fio.'</p>
+                        <p>Телефон: '.$phone.'</p>
+						<p>Желанное время звонка: '.$date.'</p>  
+						<p>Дополнительная информация: '.$additional.'</p>  
                     </body>
-                </html>'; //Текст нащего сообщения можно использовать HTML теги
+                </html>';
      $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
      mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
 ?>

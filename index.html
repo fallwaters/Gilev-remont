@@ -251,7 +251,7 @@
                   </div>
                </div>
             </div>
-            <div class="review-btn col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col">Оставить отзыв</div>
+				<div class="review-btn col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col">Оставить отзыв</div></div>
          </section>
          <section id="prices" class="prices clearfix">
             <div>
@@ -1768,10 +1768,10 @@
                  var form_data = $('#contacts-form').serialize();
                  $.ajax({
                      type: "POST",
-                     url: "/send.php",
+                     url: "send.php",
                      data: form_data,
                      success: function () {
-                         yaCounter38210115.reachGoal('REQUEST_SENDED');
+                         //yaCounter38210115.reachGoal('REQUEST_SENDED');
                          $('#contacts-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
                          $('#contacts-form').find("input[type=text], textarea").val("");
                      },
@@ -1787,10 +1787,10 @@
                  var form_data = $('#hover-form').serialize();
                  $.ajax({
                      type: "POST",
-                     url: "/send.php",
+                     url: "send.php",
                      data: form_data,
                      success: function () {
-                         yaCounter38210115.reachGoal('REQUEST_SENDED');
+                         //yaCounter38210115.reachGoal('REQUEST_SENDED');
                          $('#hover-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
                          $('#hover-form').find("input[type=text], textarea").val("");
                      },
