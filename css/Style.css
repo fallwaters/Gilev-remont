@@ -627,6 +627,11 @@ html, body {
     margin: 0;
 }
 
+.our-scheme {
+    border-bottom: 1px dashed #508991;
+    margin-bottom: 50px;
+}
+
 .our-scheme .icons {
     margin-top: 75px;
     padding: 0 15px;
@@ -730,7 +735,6 @@ html, body {
     background-color: white;
     background-size: cover;
     border-top: 1px dashed #508991;
-    border-bottom: 1px dashed #508991;
     height: 800px;
     width: 100%;
     position: relative;
@@ -1589,6 +1593,10 @@ table.fixed td:nth-of-type(3) {
 }
 
 @media(min-width: 768px) {
+    
+    .flat-clipart {
+        height: 650px;
+    }
 
     .flat-content {
         height: 450px;
@@ -1966,6 +1974,10 @@ table.fixed td:nth-of-type(3) {
         font-size: 12px;
     }
     
+    .flat-clipart {
+        height: 750px;
+    }
+    
     .flat-content {
         height: 550px;
     }
@@ -2321,6 +2333,10 @@ table.fixed td:nth-of-type(3) {
                     font-size: 14px;
                 }
 
+    
+    .flat-clipart {
+        height: 850px;
+    }
     
     .flat-content {
         height: 650px;
