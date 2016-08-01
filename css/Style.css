@@ -1095,7 +1095,6 @@ html, body {
 
         .our-deals .deals .deal .deal-more, .our-deals .deals .deal .review {
             position: fixed;
-            z-index: 1101;
             background: #fff;
             text-align: left;
             padding: 10px 15px;
