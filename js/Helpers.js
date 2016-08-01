@@ -16,7 +16,11 @@ $(document).ready(function () {
 //        flag = false;
     });
     
+    var isCleared = false;
+    var clearInterval = setInterval(linkSwitchToNext, 2000);
+    
     $('a.link').on('click', linkSwitch);
+    
     
     $('a[href$="#top"]').bind('click', function (e){
         e.preventDefault();
@@ -30,8 +34,6 @@ $(document).ready(function () {
     e.preventDefault();
     });
     
-    
-    setInterval(linkSwitchToNext, 2000);
     
     
     $('.main-part .top-buttons .button-transp').bind("click", function (e) {
@@ -306,6 +308,7 @@ function linkSwitch(e){
 }
 
 function linkSwitchToNext(){
+    isCleared = true;
     $('a.link').each(function () {
             $('.el-desc').css('opacity', '0');
             $('.sh-desc').css('opacity', '0');

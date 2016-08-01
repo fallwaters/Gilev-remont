@@ -555,8 +555,7 @@ html, body {
     }
 
     .about-us .icons .icon:hover {
-        background-color: #5FAD41;
-        opacity: .8;
+        background-color: #74B3CE;
         transition: .5s;
 }
 
