@@ -1576,7 +1576,7 @@ table.fixed td:nth-of-type(3) {
 
 @media(min-width: 768px) and (orientation: portrait) {
     .left-side-bar .left-side-contacts {
-        margin-top: 46px;
+        margin-top: 90px;
     }
 	.left-side-bar {
         width: 129px;
@@ -1585,7 +1585,7 @@ table.fixed td:nth-of-type(3) {
 
 @media(min-width: 768px) and (orientation: landscape) {
     .left-side-bar .left-side-contacts {
-        margin-top: 46px;
+        margin-top: 90px;
     }
     .left-side-bar {
         width: 129px;
@@ -1909,13 +1909,13 @@ table.fixed td:nth-of-type(3) {
 
 @media (min-width: 992px) and (orientation: portrait) {
     .left-side-bar .left-side-contacts {
-        margin-top: 40px;
+        margin-top: 84px;
     }
 }
 
 @media (min-width: 992px) and (orientation: landscape) {
     .left-side-bar .left-side-contacts {
-        margin-top: 40px;
+        margin-top: 84px;
     }
 }
 
@@ -2192,7 +2192,7 @@ table.fixed td:nth-of-type(3) {
     }
 
     .left-side-bar .left-side-contacts {
-        margin-top: 49px;
+        margin-top: 93px;
     }
 
         .left-side-bar .left-side-contacts .phone {
