@@ -91,7 +91,7 @@ html, body {
     overflow-y: overlay;
 }
 
-.our-deals .deals .deal .deal-more, .our-deals .deals .deal .review {
+.deal-more, .review {
         position: fixed;
         z-index: 1100;
         background-color: #fff;
@@ -486,7 +486,7 @@ html, body {
     position: relative;
 }
 
-    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1, .before h1 {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 26px;
@@ -636,10 +636,6 @@ html, body {
     margin: 0;
 }
 
-.our-scheme {
-    border-bottom: 1px dashed #508991;
-    margin-bottom: 50px;
-}
 
 .our-scheme .icons {
     margin-top: 75px;
@@ -740,11 +736,16 @@ html, body {
             box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.75);
         }
 
+.before {
+    margin-bottom: 50px;
+    border-bottom: 1px dashed #508991;
+    border-top: 1px dashed #508991;
+}
+
 .flat-clipart {
     background-color: white;
     background-size: cover;
-    border-top: 1px dashed #508991;
-    height: 800px;
+    height: 400px;
     width: 100%;
     position: relative;
 }
@@ -772,8 +773,8 @@ html, body {
     position: relative;
     margin: 0 auto;
     top: 150px;
-    height: 70%;
-    width: 70%;
+    height: 50%;
+    width: 50%;
 }
 
 
@@ -1467,7 +1468,7 @@ table.fixed td:nth-of-type(3) {
         font-size: 16px;
     }
 
-    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 .before h1{
         font-size: 32px;
     }
 
@@ -1555,8 +1556,8 @@ table.fixed td:nth-of-type(3) {
     }
     
     .review, .deal-more {
-        width: 500px;
-        height: 600px;
+        width: 400px;
+        height: 300px;
         top: 50%;
         left: 50%;
         margin-top: -280px;
@@ -1567,13 +1568,13 @@ table.fixed td:nth-of-type(3) {
         height: 480px;
     }
 
-    .our-deals .deals .deal .deal-more, .our-deals .deals .deal .review {
+    .deal-more, .review {
         width: 600px;
         max-height: 600px;
         height: initial;
         top: 50%;
         left: 50%;
-        margin-top: -300px;
+        margin-top: -100px;
         margin-left: -300px;
     }
 }
@@ -1617,11 +1618,11 @@ table.fixed td:nth-of-type(3) {
 @media(min-width: 768px) {
     
     .flat-clipart {
-        height: 650px;
+        height: 550px;
     }
 
     .flat-content {
-        height: 450px;
+        height: 330px;
     }
     
     .flat-category {
@@ -1656,7 +1657,7 @@ table.fixed td:nth-of-type(3) {
         font-size: 12px;
     }
 
-    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1, .before h1 {
         font-size: 28px;
     }
 
@@ -2008,11 +2009,11 @@ table.fixed td:nth-of-type(3) {
     }
     
     .flat-clipart {
-        height: 750px;
+        height: 650px;
     }
     
     .flat-content {
-        height: 550px;
+        height: 450px;
     }
     
     .flat-category {
@@ -2032,7 +2033,7 @@ table.fixed td:nth-of-type(3) {
         margin-left: 10px;
     }
 
-    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1, .before h1 {
         font-size: 30px;
     }
 
@@ -2265,7 +2266,7 @@ table.fixed td:nth-of-type(3) {
         margin-top: 180px;
     }
     
-    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1, .before h1 {
         font-size: 32px;
     }
 
@@ -2377,11 +2378,11 @@ table.fixed td:nth-of-type(3) {
 
     
     .flat-clipart {
-        height: 850px;
+        height: 750px;
     }
     
     .flat-content {
-        height: 650px;
+        height: 550px;
     }
     
     .flat-category {

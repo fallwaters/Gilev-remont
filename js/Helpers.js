@@ -97,6 +97,7 @@ var memes = true;
     //        }, 500);
         if (memes){
             var offs = $($(this).children('a').attr('href')).offset().top;
+            console.log(offs);
             if (offs > $(this).offset().top) {
               $('html, body').stop().animate({
                   scrollTop: offs + 20
@@ -183,7 +184,7 @@ var memes = true;
     });
 
     $('.smoke, .close').click(function () {
-        $('.smoke, .hover-form, .our-deals .deals .deal .review, .our-deals .deals .deal .deal-more, .hover-form-review').css('display', 'none');
+        $('.smoke, .hover-form, .review, .deal-more, .hover-form-review').css('display', 'none');
     });
     
     $('#phone, #phone1').mask('+7 (999) 999 99 99');

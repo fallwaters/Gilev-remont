@@ -15,6 +15,11 @@ $(document).ready(function () {
             $(".our-scheme h1").css({ visibility: "visible" });
             $(".our-scheme h1").addClass('animated zoomIn');
         }
+        
+        if (($(this).scrollTop() + h) >= $(".before").offset().top) {
+            $(".before h1").css({ visibility: "visible" });
+            $(".before h1").addClass('animated zoomIn');
+        }
 
         if (($(this).scrollTop() + h) >= $(".prices").offset().top) {
             $(".prices h1").css({ visibility: "visible" });
