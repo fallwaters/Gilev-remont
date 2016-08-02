@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
     
     var isCleared = false;
-    var clearInterval = setInterval(linkSwitchToNext, 2000);
+    var clearInterval = setInterval(linkSwitchToNext, 4000);
     
     $('a.link').on('click', linkSwitch);
     
@@ -158,7 +158,7 @@ var memes = true;
 
     $('.btn-more').click(function () {
         $('.smoke').css('display', 'block');
-        $(this).parent().children('.deal-more').show('slow');
+        $('.deal-more').show('slow');
     });
 
     $('.car-review').mouseleave(function () {
@@ -169,7 +169,7 @@ var memes = true;
 
     $('.car-review').click(function () {
         $('.smoke').css('display', 'block');
-        $(this).parent().children('.review').show('slow');
+        $('.review').show('slow');
     });
 
     $('.about-us .icons div').hover(function () {
