@@ -31,7 +31,9 @@ html, body {
 
 .wrapper {
     position: relative;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 }
 
 .to-top {
@@ -211,6 +213,7 @@ html, body {
     width: 200px;
     position: fixed;
     top: 0;
+    border-right: 3px solid #24AD1B;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     z-index: 100;
 }
@@ -224,7 +227,10 @@ html, body {
     .left-side-bar .top-logo {
         display: inline-block;
 		background: url('../img/gold.png') no-repeat center;
-        background-size: cover;
+        background-size: 80%;
+        background-color: white;
+        border: 5px solid #24AD1B;
+        border-radius: 50%;
         width: 120px;
         height: 120px;
         margin: 20px 3px;
@@ -236,6 +242,7 @@ html, body {
         z-index: 101;
         margin-top: 210px;
         background-color: #030301;
+        border-right: 3px solid #24AD1B;
     }
 
         .left-side-bar .menu ul {
@@ -337,8 +344,6 @@ html, body {
     ),
     url(../img/1.jpg);
 	background-size: cover;
-    filter: blur(1px);
-  -webkit-filter: blur(1px);
 }
 
 
@@ -390,6 +395,7 @@ html, body {
     position: absolute;
     top: 200px;
     z-index: 2;
+    background-color: rgba(36, 173, 27, 0.6);
     color: #fff;
 }
 
@@ -419,7 +425,7 @@ html, body {
     left: 0;
     right: 0;
     margin-right: auto;
-    margin-top: 350px;
+    margin-top: 500px;
     z-index: 2;
 }
 
@@ -685,7 +691,7 @@ html, body {
     height: 800px;
     text-align: center;
     color: #fff;
-    background-color: #5FAD41;
+    background-color: #24AD1B;
     margin-top: 15px;
 }
 
@@ -1410,7 +1416,7 @@ table.fixed td:nth-of-type(3) {
     }
 
     .top-buttons {
-        margin: 300px 15px 0 15px;
+        margin: 450px 15px 0 15px;
     }
 
     .slogan-top-red {
@@ -1636,7 +1642,7 @@ table.fixed td:nth-of-type(3) {
     }
 
     .top-buttons {
-        margin-top: 135px;
+        margin-top: 230px;
     }
 
     .socials .utube {
@@ -1744,7 +1750,7 @@ table.fixed td:nth-of-type(3) {
 
     .left-side-bar .menu ul li {
         padding: 10px 0px;
-        width: 128px;
+        width: 126px;
         height: 40px;
     }
     
@@ -1957,7 +1963,7 @@ table.fixed td:nth-of-type(3) {
     }
 
     .slogan-top-red .slogan {
-        padding-top: 60px;
+        padding-top: 30px;
     }
 
         .slogan-top-red .slogan h1 {
@@ -1973,7 +1979,7 @@ table.fixed td:nth-of-type(3) {
     }
     
     .top-buttons {
-        margin-top: 165px;
+        margin-top: 255px;
     }
 
     .top-line {
@@ -2253,7 +2259,7 @@ table.fixed td:nth-of-type(3) {
     }
 
     .top-buttons {
-        margin-top: 180px;
+        margin-top: 300px;
     }
     
     .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1, .before h1 {
