@@ -45,7 +45,8 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
     right: 10px;
     font-size: 20px;
     color: #fff;
-    background: #BFAE48;
+    background: #24AD1B;
+    border-radius: 50%;
     padding: 15px;
     opacity: .3;
     transition: .3s;
@@ -118,7 +119,7 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
         }
 
         .hover-form .form-group input[type=text], .hover-form .form-group textarea, .hover-form-review .form-group input[type=text], .hover-form-review .form-group textarea {
-            border: 1px solid #BFAE48;
+            border: 1px solid #24AD1B;
             width: 100%;
             resize: none;
             color: #18191d;
@@ -199,7 +200,7 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 
             .menu-xs ul li a {
                 text-decoration: none;
-                color: #BFAE48;
+                color: #24AD1B;
                 font-size: 10px;
             }
 
@@ -225,9 +226,9 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
     }
 
     .left-side-bar .top-logo {
+        position: relative;
         display: inline-block;
 		background: url('../img/remont.png') no-repeat center;
-        position: relative;
         background-size: 80%;
         background-color: white;
         border: 5px solid #24AD1B;
@@ -235,14 +236,14 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
         width: 120px;
         height: 120px;
         margin: 20px 3px;
-        left: 50px;
+        left: 40px;
     }
 
     .left-side-bar .menu {
         display: inline-block;
         position: relative;
         z-index: 101;
-        margin-top: 210px;
+        margin-top: 250px;
         background-color: #030301;
         border-right: 5px solid #24AD1B;
     }
@@ -282,7 +283,6 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 }
 
     .left-side-bar .left-side-contacts {
-        margin-top: 370px;
         text-align: center;
         color: #fff;
         padding-top: 10px;
@@ -392,6 +392,7 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
         }
 
 .slogan-top-red {
+    width: 100%;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     position: absolute;
@@ -421,12 +422,12 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 
 .top-buttons {
     position: absolute;
-    text-align: center;
+    text-align: right;
     color: #fff;
     margin-left: auto;
     left: 0;
     right: 0;
-    margin-right: auto;
+    margin-right: 50px;
     margin-top: 500px;
     z-index: 2;
 }
@@ -443,22 +444,20 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
     }
 
     .top-buttons .button-red {
-        background-color: #DE6461;
+        background-color: #23AB18;
         margin-right: 15px;
     }
 
         .top-buttons .button-red:hover {
-            background-color: #D7263D;
+            background-color: #1C701B;
         }
 
     .top-buttons .button-transp {
-        background-color: #18191d;
-        background-color: rgba(24, 25, 29, 1);
+        background-color: #1c701b;
     }
 
         .top-buttons .button-transp:hover {
-            background-color: #18191d;
-            background-color: rgba(1, 1, 1, 1);
+            background-color: #1c701b;
         }
 
         .top-buttons .button-transp a {
@@ -473,7 +472,7 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 }
 
 .our-scheme, .our-deals {
-    padding: 0 0 60px 0;
+    padding: 0;
     background: #fff;
     position: relative;
 }
@@ -510,7 +509,17 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
             position: absolute;
             bottom: -75%;
             height: 100%;
-            background: url(../img/our-scheme-dl.png) no-repeat center;
+            background: url(../img/prices-dl.png) no-repeat center;
+            width: 100%;
+            left: 0;
+        }
+
+        .before h1::after {
+            content: '';
+            position: absolute;
+            bottom: -75%;
+            height: 100%;
+            background: url(../img/about-us-dl.png) no-repeat center;
             width: 100%;
             left: 0;
         }
@@ -563,7 +572,8 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
     }
 
     .about-us .icons .icon:hover {
-        background-color: #74B3CE;
+        background-color: #24AD1B;
+        opacity: .5;
         transition: .5s;
 }
 
@@ -715,7 +725,7 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
         }
 
     .our-scheme .slogan-schema-red .zayavka-slogan-btn {
-        background-color: #BFAE48;
+        background-color: #24AD1B;
         border: 2px solid #fff;
         display: inline-block;
         padding: 15px 30px;
@@ -740,17 +750,21 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
     border-top: 1px dashed #508991;
 }
 
+.before h1 {
+    margin-top: 50px;
+}
+
 .flat-clipart {
     background-color: white;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     width: 100%;
     position: relative;
 }
 
 .flat-description {
     position: absolute;
-    top: 125px;
+    top: 200px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -758,7 +772,7 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
     line-height: 30px;
     width: 400px;
     text-align: center;
-    background-color: rgba(80, 137, 145, 0.7);
+    background-color: #24AD1B;
     padding: 10px;
     color: white;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -903,18 +917,18 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 }
 
 .prices {
-    border-bottom: 1px dashed #508991;
+    border-bottom: 1px dashed #24AD1B;
     margin-bottom: 50px;
 }
 
 .prices .uslugi {
     margin-top: 75px;
-    border-right: 5px solid #BFAE48;
+    border-right: 5px solid #24AD1B;
 }
 
     .prices .uslugi div {
         font-size: 14px;
-        border-left: 5px solid #BFAE48;
+        border-left: 5px solid #24AD1B;
         padding-left: 15px;
         margin-bottom: 35px;
     }
@@ -966,20 +980,20 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 
         .prices .price .descriptions h4 {
             font-weight: bold;
-            color: #BFAE48;
+            color: #24AD1B;
             font-size: 14px;
             margin-top: 15px;
         }
 
     .prices .price .red-border {
-        border-left: 5px solid #BFAE48;
+        border-left: 5px solid #24AD1B;
         margin-top: 30px;
         padding: 30px 25px 30px 0;
     }
 
     .prices .price .podrobnee-btn, .our-contacts .podrobnee-btn, .hover-form .podrobnee-btn, .review-btn, .review-btn {
         font-size: 24px;
-        border: 2px solid #DE6461;
+        border: 2px solid #24AD1B;
         border-radius: 100px;
         padding: 12px 8px;
         margin-top: 30px;
@@ -991,7 +1005,7 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 .our-contacts .podrobnee-btn, .hover-form .podrobnee-btn, .review-btn, .submit-review-btn {
     margin-top: 30px;
      font-size: 24px;
-        border: 2px solid #DE6461;
+        border: 2px solid #24AD1B;
         border-radius: 100px;
         padding: 15px 10px;
         transition: .3s;
@@ -1000,17 +1014,18 @@ box-shadow: 0px 2px 59px 16px rgba(0,0,0,0.75);
 }
 
     .prices .price .podrobnee-btn:hover, .our-contacts .podrobnee-btn:hover, .hover-form .podrobnee-btn:hover, .review-btn:hover, .submit-review-btn:hover {
-        background-color: #DE6461;
+        background-color: #24AD1B;
         color: #fff;
     }
 
 .our-deals {
-    border-bottom: 1px dashed #508991;
+    border-bottom: 1px dashed #24AD1B;
     margin-bottom: 50px;
 }
 
 .our-deals .deals {
     margin-top: 75px;
+    padding-bottom: 50px;
 }
 
     .our-deals .deals .deal {
@@ -1267,9 +1282,11 @@ table.fixed td:nth-of-type(3) {
 
 .our-contacts .contacts {
     margin-top: 90px;
+    border-right: 5px solid #24AD1B;
 }
 
     .our-contacts .contacts div {
+        border-left: 5px solid #24AD1B;
         padding-left: 15px;
         margin-bottom: 35px;
     }
@@ -1284,7 +1301,7 @@ table.fixed td:nth-of-type(3) {
 }
 
     .our-contacts .contact-form .red-border {
-        border-left: 1px solid #508991;
+        border-left: 5px solid #24AD1B;
         padding: 0 25px 0 15px;
         margin-left: 200px;
     }
@@ -1307,7 +1324,7 @@ table.fixed td:nth-of-type(3) {
         }
 
         .our-contacts .contact-form .form-group input[type=text], .our-contacts .contact-form .form-group textarea {
-            border: 1px solid #BFAE48;
+            border: 1px solid #24AD1B;
             width: 100%;
             resize: none;
             color: #18191d;
@@ -1356,7 +1373,7 @@ table.fixed td:nth-of-type(3) {
 }
 
 .input-group.date .input-group-addon {
-    background: #BFAE48;
+    background: #24AD1B;
     border: none;
     border-radius: 0;
 }
@@ -1368,7 +1385,7 @@ table.fixed td:nth-of-type(3) {
 .footer {
     background: #fff;
     padding: 15px 15px 30px 15px;
-    border-top: 1px solid #BFAE48;
+    border-top: 1px solid #24AD1B;
 }
 
     .footer .left-footer {
@@ -1429,7 +1446,9 @@ table.fixed td:nth-of-type(3) {
         width: 23px;
         height: 23px;
     }
+    
 }
+
 
 @media(min-width: 375px) {
     .our-deals .deals .deal div .btn-more {
@@ -1595,28 +1614,21 @@ table.fixed td:nth-of-type(3) {
     }
 }
 
-@media(min-width: 768px) and (orientation: portrait) {
+@media(min-width: 768px) {
+    
     .left-side-bar .left-side-contacts {
-        margin-top: 90px;
-    }
-	.left-side-bar {
-        width: 129px;
-    }
-}
-
-@media(min-width: 768px) and (orientation: landscape) {
-    .left-side-bar .left-side-contacts {
-        margin-top: 90px;
+        margin-top: 20px;
     }
     .left-side-bar {
         width: 131px;
     }
-}
-
-@media(min-width: 768px) {
+    
+    .left-side-bar .top-logo {
+        left: 25px;
+    }
     
     .flat-clipart {
-        height: 550px;
+        height: 650px;
     }
 
     .flat-content {
@@ -1645,6 +1657,7 @@ table.fixed td:nth-of-type(3) {
 
     .top-buttons {
         margin-top: 230px;
+        left: 50px;
     }
 
     .socials .utube {
@@ -1932,13 +1945,13 @@ table.fixed td:nth-of-type(3) {
 
 @media (min-width: 992px) and (orientation: portrait) {
     .left-side-bar .left-side-contacts {
-        margin-top: 84px;
+        margin-top: 20px;
     }
 }
 
 @media (min-width: 992px) and (orientation: landscape) {
     .left-side-bar .left-side-contacts {
-        margin-top: 84px;
+        margin-top: 20px;
     }
 }
 
@@ -1954,7 +1967,7 @@ table.fixed td:nth-of-type(3) {
     .left-side-bar .top-logo {
         width: 150px;
         height: 150px;
-		margin-left: 8px;
+        left: 30px;
     }
     .left-side-bar {
         width: 166px;
@@ -2007,7 +2020,7 @@ table.fixed td:nth-of-type(3) {
     }
     
     .flat-clipart {
-        height: 650px;
+        height: 750px;
     }
     
     .flat-content {
@@ -2190,7 +2203,7 @@ table.fixed td:nth-of-type(3) {
     .left-side-bar .top-logo {
         width: 180px;
         height: 180px;
-		margin-left: 8px;
+        left: 40px;
     }
     .left-side-bar {
         width: 200px;
@@ -2217,7 +2230,7 @@ table.fixed td:nth-of-type(3) {
     }
 
     .left-side-bar .left-side-contacts {
-        margin-top: 93px;
+        margin-top: 20px;
     }
 
         .left-side-bar .left-side-contacts .phone {
@@ -2376,7 +2389,7 @@ table.fixed td:nth-of-type(3) {
 
     
     .flat-clipart {
-        height: 750px;
+        height: 850px;
     }
     
     .flat-content {

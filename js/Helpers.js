@@ -97,18 +97,16 @@ var memes = true;
     //        }, 500);
         if (memes){
             var offs = $($(this).children('a').attr('href')).offset().top;
+            var t = $(this).offset().top;
             console.log(offs);
-            if (offs > $(this).offset().top) {
-              $('html, body').stop().animate({
-                  scrollTop: offs + 20
-              }, 400, function() {
-
-              $('html, body').animate({
-                  scrollTop: offs
-              }, 120, function () {$(document).on('scroll', onScroll)});
-            });
+            if (offs > t) {
+                for (let i = 1; i < 40; i++){
+                    $('html, body').stop().animate({
+                        scrollTop: t + (offs-t)*i/40;
+                    }, Math.abs(Math.cos(i))*400);
+                }
             }
-            else if (offs < $(this).offset().top) {
+            else if (offs < t) {
                 $('html, body').stop().animate({
                   scrollTop: offs - 20
               }, 400, function() {
@@ -152,9 +150,9 @@ var memes = true;
     });
 
     $('.btn-more').mouseleave(function () {
-        $(this).css('background-color', 'rgba(198, 21, 20, .4)');
+        $(this).css('background-color', 'rgba(139, 195, 74, .4)');
     }).mouseenter(function () {
-        $(this).css('background-color', 'rgba(198, 21, 20, 1)');
+        $(this).css('background-color', '#24AD1B');
     });
 
     $('.btn-more').click(function () {
