@@ -7,33 +7,33 @@ $(document).ready(function () {
     
     $(window).scroll(function () {
         if (($(this).scrollTop() + h) >= $(".about-us").offset().top) {
-            $(".about-us h1").css({ visibility: "visible" });
-            $(".about-us h1").addClass('animated zoomIn');
+            $(".about-us h2").css({ visibility: "visible" });
+            $(".about-us h2").addClass('animated zoomIn');
         }
 
         if (($(this).scrollTop() + h) >= $(".our-scheme").offset().top) {
-            $(".our-scheme h1").css({ visibility: "visible" });
-            $(".our-scheme h1").addClass('animated zoomIn');
+            $(".our-scheme h2").css({ visibility: "visible" });
+            $(".our-scheme h2").addClass('animated zoomIn');
         }
         
         if (($(this).scrollTop() + h) >= $(".before").offset().top) {
-            $(".before h1").css({ visibility: "visible" });
-            $(".before h1").addClass('animated zoomIn');
+            $(".before h2").css({ visibility: "visible" });
+            $(".before h2").addClass('animated zoomIn');
         }
 
         if (($(this).scrollTop() + h) >= $(".prices").offset().top) {
-            $(".prices h1").css({ visibility: "visible" });
-            $(".prices h1").addClass('animated zoomIn');
+            $(".prices h2").css({ visibility: "visible" });
+            $(".prices h2").addClass('animated zoomIn');
         }
 
         if (($(this).scrollTop() + h) >= $(".our-deals").offset().top) {
-            $(".our-deals h1").css({ visibility: "visible" });
-            $(".our-deals h1").addClass('animated zoomIn');
+            $(".our-deals h2").css({ visibility: "visible" });
+            $(".our-deals h2").addClass('animated zoomIn');
         }
 
         if (($(this).scrollTop() + h) >= $(".our-contacts").offset().top) {
-            $(".our-contacts h1").css({ visibility: "visible" });
-            $(".our-contacts h1").addClass('animated zoomIn');
+            $(".our-contacts h2").css({ visibility: "visible" });
+            $(".our-contacts h2").addClass('animated zoomIn');
         }
 
         if (($(this).scrollTop() + h) >= $(".our-scheme .icon").offset().top) {
