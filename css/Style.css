@@ -267,10 +267,6 @@ html, body {
                 color: #ffffff;
                 transition: .3s;
             }
-                .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
-                    color: #c61514;
-                    text-decoration: none;
-                }
 
     .left-side-bar .left-side-contacts {
         margin-top: 350px;
