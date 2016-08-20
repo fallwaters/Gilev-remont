@@ -42,11 +42,11 @@ $(document).ready(function () {
             setTimeout(function () { $('.our-scheme .icons div.third').css({ visibility: "visible" }).addClass('animated fadeIn') }, 1000);
         }
 
-        if (($(this).scrollTop() + h) >= h * 2) {
+        if ($(this).scrollTop() >= h) {
             $('.to-top').css('display', 'inline-block');
         };
 
-        if (($(this).scrollTop() + h) <= h * 2) {
+        if ($(this).scrollTop() < h) {
             $('.to-top').css('display', 'none');
         };
     });
