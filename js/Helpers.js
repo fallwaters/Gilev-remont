@@ -188,6 +188,10 @@ var clearInt;
 
 
 $(document).ready(function () {
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
+    console.log("Сейчас " + hours + " часов, " + minutes + " минут, " + seconds + " секунд.");
     // Плавный скролл к якорям
     $('.accordion').on('click', function (e) {
 //    var flag = false;

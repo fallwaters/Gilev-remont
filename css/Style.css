@@ -514,14 +514,6 @@ html, body {
 		
     }
 
-        .about-us .icons div p.hovered {
-            font-weight: bold;
-        }
-
-        .about-us .icons div h4 {
-            font-weight: bold;
-            transition: .3s;
-        }
 
         .about-us .icons div .icon div {
             transition: .3s;
